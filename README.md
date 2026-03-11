@@ -11,6 +11,7 @@ Uma API Backend robusta para gestão de manutenções de bicicletas, focada em p
 
 ##  Regras de Negócio Implementadas
 - [x] **Validação de Quilometragem**: O sistema impede o cadastro de bicicletas com quilometragem negativa, garantindo a consistência do banco de dados.
+- [x] **Listagem Dinâmica**: Retorno de todos os registros em formato JSON para integração com Front-end.
 
 ##  Como Executar
 1. Clone o repositório.
@@ -18,5 +19,12 @@ Uma API Backend robusta para gestão de manutenções de bicicletas, focada em p
 3. Rode o projeto via sua IDE favorita ou pelo terminal com `./mvnw spring-boot:run`.
 4. A API estará disponível em `http://localhost:8080/bicicletas`.
 
----
+##  Endpoints da API
+
+| Método | Endpoint      | Descrição                         |
+|--------|---------------|-----------------------------------|
+| POST   | `/bicicletas` | Cadastra uma nova bicicleta       |
+| GET    | `/bicicletas` | Lista todas as bicicletas salvas  |
+
+
 *Projeto desenvolvido como parte do meu portfólio de Engenharia de Software.*
