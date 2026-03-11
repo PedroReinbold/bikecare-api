@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.reinbold.bikecare_api.repositorio.BicicletaRepository;
 
+import java.util.List;
+
 @Service
 
 public class BicicletaServico {
@@ -19,6 +21,10 @@ public class BicicletaServico {
 
 
         return repository.save(novaBicicleta);
+    }
+
+    public List<Bicicleta> listarTodas() {
+        return repository.findAll();
     }
 
 }
